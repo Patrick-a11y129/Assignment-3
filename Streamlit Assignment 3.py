@@ -602,7 +602,7 @@ elif page == "Search":
 # ============================================
 
 elif page == "Recommendations":
-    st.header(" Top-N Recommendations")
+    st.header(" Top-5 Recommendations")
 
     user = engine.current_user
 
@@ -800,7 +800,7 @@ elif page == "Dashboard(and Login)":
 
     # Tab 3: Analytics - SIMPLIFIED VISUALIZATIONS
     with tab3:
-        st.subheader(" :graph: Your Analytics")
+        st.subheader(":graph: Your Analytics")
 
         # Genre preferences with ASCII bars
         st.write("**Genre Preferences**")
@@ -828,7 +828,7 @@ elif page == "Dashboard(and Login)":
         st.markdown("---")
 
         # Rating distribution with emoji bars
-        st.write("** :starr: Your Rating Distribution**")
+        st.write("** :star: Your Rating Distribution**")
         if user.ratings:
             dist: Dict[int, int] = {}
             for r in user.ratings.values():

@@ -602,7 +602,7 @@ elif page == "Search":
 # ============================================
 
 elif page == "Recommendations":
-    st.header(" Top-5 Recommendations")
+    st.header(" Top-N Recommendations")
 
     user = engine.current_user
 

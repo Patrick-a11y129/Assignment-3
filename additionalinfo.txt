@@ -1,0 +1,2 @@
+Admin password is 1234
+The Json file can be initially created by clicking create demo file button
